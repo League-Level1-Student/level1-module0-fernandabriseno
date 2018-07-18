@@ -27,7 +27,7 @@ JPanel panel = new JPanel();
 		//6. Create and initialize an object of the JLabel class
 JLabel label = new JLabel();
 		//7. Set the text of the JLabel to a lovely greeting.
-label.setText("This is a lovely greeting...");
+label.setText("This is a lovely greeting... and Caitlyn... dogs are WAY better :P");
 		//8. Add the JPanel object to the JFrame
 frame.add(panel);
 		//9. Add the JLabel object to the JPanel

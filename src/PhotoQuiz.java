@@ -5,6 +5,7 @@
 
 
 import java.awt.Component;
+import java.awt.Window;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -32,23 +33,33 @@ quizWindow.add(component);
 		// 5. call the pack() method on the quiz window
 quizWindow.pack();
 		// 6. ask a question that relates to the image
-
+String dogs = JOptionPane.showInputDialog("Are dogs or cats cuter/better/thebest/awesomer/likeWAYbetter");
 		// 7. print "CORRECT" if the user gave the right answer
-
+if (dogs.equals("dogs")) {  
+JOptionPane.showInputDialog("CORRECT!!! :) YOU ARE SUPER CORRECT DONT LET ANYONE TELL YOU THAT YOU ARE WRONG CUZ YOU ARE RIGHT!!! XD YOU ARE SO AWESOME!!!");
+}
 		// 8. print "INCORRECT" if the answer is wrong
-
+if (dogs.equals("cats")) { 
+JOptionPane.showInputDialog("INCORRECT!! YOU ARE SO WRONG!! DOGS ARE WAY BETTER IM SO SORRY BUT THAT IS THE TRUTH!! FACE IT!! have a good day.. :)");
+}
 		// 9. remove the component from the quiz window (you may not see the effect of this until step 12)
-
+quizWindow.remove(component);
 		// 10. find another image and create it (might take more than one line of code)
-
+String rose = "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiYiMTc4qncAhVzCDQIHWqGDdcQjRx6BAgBEAU&url=https%3A%2F%2Fwww.jackseeds.com%2Fproducts%2F25-rare-holland-rainbow-rose-flower-seeds&psig=AOvVaw2Hxj1elBBO5_LOd5Yh4ucu&ust=1532041829175315";
 		// 11. add the second image to the quiz window
-
-		// 12. pack the quiz window
-
+quizWindow.add(component);
+		Window frame = null;
+// 12. pack the quiz window 
+frame.pack();
 		// 13. ask another question
-
+JOptionPane.showInputDialog("Is a rainbow rose artificially colored or is it real??? :)");
 		// 14+ check answer, say if correct or incorrect, etc.
-
+if (rose.equals("artificial")) { 
+JOptionPane.showInputDialog("CORRECT!! How can it be real? I wish it was though...");
+} 
+if (rose.equals("real")) {
+JOptionPane.showInputDialog("INCORRECT!! Sorry! How can it be real? I wish it was though...");
+}
 	}
 
 	private static Component createImage(String imageUrl) throws MalformedURLException {
